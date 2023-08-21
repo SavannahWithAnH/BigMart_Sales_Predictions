@@ -1,4 +1,4 @@
-# Automaker Stock Data Analysis & Visualization
+# BigMart Sales Data Neural Network
 
 **Topic:** Create a model which predicts sales of products at BigMart locations based on 2013 Sales data. 
   
