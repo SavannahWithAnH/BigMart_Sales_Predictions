@@ -9,11 +9,11 @@
 # Contributors & Responsibilities
 - Alex Kopp - TBD
 - Andrew Skorupa - TBD 
-- Savannah Porter - TBD
+- Savannah Porter - Random Forest, Randomized Search, & Regularization
 - Mohamed Abou elkhier -  TBD
  
 ## Datasets
-Click [here] (https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/notebook) to view one of our primary datasets!
+Click [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/notebook) to view one of our primary datasets!
 
 Item_Identifier: Unique product ID
 
