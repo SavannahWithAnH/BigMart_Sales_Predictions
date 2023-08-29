@@ -1,6 +1,6 @@
 # BigMart Sales Data Neural Network
 
-**Topic:** Create a model which predicts sales of products at BigMart locations based on 2013 Sales data. 
+**Topic:** Create a model which predicts sales of products at BigMart locations based on 2013 Sales data. <br>
 Click [here](https://docs.google.com/presentation/d/1MLGNz3lZow-65TH0pca2mxmcsVfNuM0Paq-pxnvl1vI/edit#slide=id.g278fa82c89e_0_50) to view our findings presentation.
   
 ## Project Proposal
