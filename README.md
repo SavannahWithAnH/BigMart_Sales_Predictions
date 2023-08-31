@@ -20,41 +20,42 @@ Click [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/not
 - Savannah Porter
 - Mohamed Abou elkhier
 
- ## Contributor: Mohamed
-
-- **File Name:** XGBR_final_results.ipynb
-- **Methods:** train_test_split, XGBRegressor, StandardScaler, SimpleImputer, sklearn.metrics
-- **Performance:** The model achieved an R-squared value of approximately 0.82, indicating good performance for sale predictions. This level of performance is attributed to the model's ability to capture underlying sales patterns while considering real-world variability and noise.
-
-## Contributor: Alex
-
-- **File Name:** Sales_predict_product.ipynb
-- **Methods:** train_test_split, StandardScaler, LabelEncoder, XGBRegressor, sklearn.metrics
-- **Performance:** The model achieved an R-squared value of about 0.543, suggesting moderate predictive accuracy. While the model captures a significant portion of sales data patterns, there's potential for improvement to enhance its predictive power.
-
-## Contributor: Mohamed
-
-- **File Name:** GBR.IPYNB
-- **Methods:** GradientBoostingRegressor, MinMax, KFold, hyperparameter tuning with nested loops
-- **Performance:** The model achieves an R-squared value of around 0.705, indicating decent-to-good fit. Such performance is typically acceptable for real-world scenarios, showcasing the model's ability to capture meaningful data patterns.
-
-## Contributor: Andrew
-
-- **File Name:** Exploratory_Analysis.ipynb
-- **Methods:** train_test_split, StandardScaler, mean_squared_error, ensemble.GradientBoostingRegressor
-- **Performance:** Evaluated by Mean Squared Error (MSE), the model's calculated MSE of approximately 0.0013 signifies accurate predictions aligned with actual sales. The accompanying deviance plot highlights its effective error minimization through boosting iterations.
-
-## Contributor: Alex
+  ## Alex
 
 - **File Name:** Sales_predict_rf.ipynb
 - **Methods:** RandomForestRegressor, train_test_split, StandardScaler, tensorflow_decision_forests, mean_squared_error
 - **Performance:** The model's R-squared value of 0.586 showcases reasonable performance on the dataset, indicating its ability to capture sales patterns with a certain degree of accuracy.
 
-## Contributor: Savannah
+## Savannah
 
 - **File Name:** RF3.ipynb
 - **Methods:** RandomForestRegressor, train_test_split, StandardScaler, RandomizedSearchCV
 - **Performance:** RF3 achieves an R-squared value of 0.6080, indicating improved predictive accuracy compared to RandomForest's default settings.
+
+## Mohamed
+
+- **File Name:** GBR.IPYNB
+- **Methods:** GradientBoostingRegressor, MinMax, KFold, hyperparameter tuning with nested loops
+- **Performance:** The model achieves an R-squared value of around 0.705, indicating decent-to-good fit. Such performance is typically acceptable for real-world scenarios, showcasing the model's ability to capture meaningful data patterns.
+
+## Andrew
+
+- **File Name:** Exploratory_Analysis.ipynb
+- **Methods:** train_test_split, StandardScaler, mean_squared_error, ensemble.GradientBoostingRegressor
+- **Performance:** Evaluated by Mean Squared Error (MSE), the model's calculated MSE of approximately 0.0013 signifies accurate predictions aligned with actual sales. The accompanying deviance plot highlights its effective error minimization through boosting iterations.
+
+ ## Mohamed
+
+- **File Name:** XGBR_final_results.ipynb
+- **Methods:** train_test_split, XGBRegressor, StandardScaler, SimpleImputer, sklearn.metrics
+- **Performance:** The model achieved an R-squared value of approximately 0.82, indicating good performance for sale predictions. This level of performance is attributed to the model's ability to capture underlying sales patterns while considering real-world variability and noise.
+
+## Alex
+
+- **File Name:** Sales_predict_product.ipynb
+- **Methods:** train_test_split, StandardScaler, LabelEncoder, XGBRegressor, sklearn.metrics
+- **Performance:** The model achieved an R-squared value of about 0.543, suggesting moderate predictive accuracy. While the model captures a significant portion of sales data patterns, there's potential for improvement to enhance its predictive power.
+
 
 
 
