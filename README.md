@@ -3,8 +3,14 @@
 **Topic:** Create a model which predicts sales of products at BigMart locations based on 2013 Sales data. <br>
 Click [here](https://docs.google.com/presentation/d/1MLGNz3lZow-65TH0pca2mxmcsVfNuM0Paq-pxnvl1vI/edit#slide=id.g278fa82c89e_0_50) to view our findings presentation.
   
-## Project Proposal
+## Overview
 
+This project focuses on leveraging regression analytics to predict future sales for a diverse range of products across various store locations. The sales data, collected from BigMart in the year 2013, serves as the foundation for this predictive analysis. The primary objective is to utilize historical sales data, product attributes, and location-related factors to build a robust regression model that can accurately forecast sales in the future.
+
+**Benefits of Sales Prediction:**
+Predicting future sales has significant benefits for both businesses and consumers. For BigMart, accurate sales predictions enable strategic inventory management, optimizing stock levels to prevent overstocking or stockouts. This, in turn, enhances operational efficiency and reduces carrying costs. Additionally, sales predictions allow the identification of high-demand products and locations, aiding in targeted marketing campaigns and improved resource allocation. For consumers, accurate sales predictions can lead to more consistent product availability and potentially lower prices due to optimized inventory management.
+
+As this project encompasses contributions from diverse aspects such as data preprocessing, feature engineering, regression modeling, and location-based analysis, it showcases the collaborative efforts of contributors with varied expertise, ultimately culminating in a predictive model that can drive informed decision-making for BigMart.
 
 
 # Contributors & Responsibilities
