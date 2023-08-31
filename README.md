@@ -89,6 +89,7 @@ In conclusion, Mohamed's code demonstrates a well-structured approach to feature
 <br>
 <br>
 <br>
+
 **Please visit our individual Github pages below**  
 [Alex Kopp](https://github.com/alexkopp12)  
 [Andrew Skorupa](https://github.com/AndyMSkor)  
