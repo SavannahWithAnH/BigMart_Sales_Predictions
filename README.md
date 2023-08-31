@@ -54,7 +54,7 @@ Click [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/not
 - **Performance:** The model achieved an R-squared value of about 0.543, suggesting moderate predictive accuracy. While the model captures a significant portion of sales data patterns, there's potential for improvement to enhance its predictive power.
 
 
-## Highest Performing Model
+# Highest Performing Model
 
 Among the contributions, the code provided by **Mohamed** in the file `XGBR_final_results.ipynb` stands out as the highest performing model. This model achieved an impressive R-squared value of approximately 0.82, indicating a robust predictive capability for sales. Several factors likely contributed to its exceptional performance:
 
@@ -79,7 +79,7 @@ In conclusion, Mohamed's code demonstrates a well-structured approach to feature
 
 
 
-## Insights from the Data
+# Insights from the Data
 
 Upon analyzing the sales data, several insightful observations have been made:
 
