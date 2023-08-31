@@ -1,7 +1,4 @@
 # BigMart Sales Data Neural Network
-
-**Topic:** Create a model which predicts sales of products at BigMart locations based on 2013 Sales data. <br>
-Click [here](https://docs.google.com/presentation/d/1MLGNz3lZow-65TH0pca2mxmcsVfNuM0Paq-pxnvl1vI/edit#slide=id.g278fa82c89e_0_50) to view our findings presentation.
   
 ## Overview
 
@@ -12,6 +9,7 @@ Predicting future sales has significant benefits for both businesses and consume
 
 As this project encompasses contributions from diverse aspects such as data preprocessing, feature engineering, regression modeling, and location-based analysis, it showcases the collaborative efforts of contributors with varied expertise, ultimately culminating in a predictive model that can drive informed decision-making for BigMart.
 
+Please click [here](https://docs.google.com/presentation/d/1MLGNz3lZow-65TH0pca2mxmcsVfNuM0Paq-pxnvl1vI/edit#slide=id.g278fa82c89e_0_50) to view our findings presentation.
 
 # Contributors & Responsibilities
 - Alex Kopp - TBD
