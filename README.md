@@ -14,11 +14,14 @@ Please click [here](https://docs.google.com/presentation/d/1MLGNz3lZow-65TH0pca2
 ## Datasets
 Click [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/notebook) to view one of our primary datasets!  
 
-# Contributors & Responsibilities
+# Contributors
 - Alex Kopp
 - Andrew Skorupa
 - Savannah Porter
 - Mohamed Abou elkhier
+
+
+# Model Building and Optimization
 
 ## Alex
 - **File Name:** Sales_predict_rf.ipynb
