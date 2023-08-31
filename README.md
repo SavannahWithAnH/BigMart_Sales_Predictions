@@ -57,143 +57,41 @@ Click [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/not
 - **Performance:** The model achieved an R-squared value of about 0.543, suggesting moderate predictive accuracy. While the model captures a significant portion of sales data patterns, there's potential for improvement to enhance its predictive power.
 
 
+## Highest Performing Model
 
+Among the contributions, the code provided by **Mohamed** in the file `XGBR_final_results.ipynb` stands out as the highest performing model. This model achieved an impressive R-squared value of approximately 0.82, indicating a robust predictive capability for sales. Several factors likely contributed to its exceptional performance:
 
-Item_Identifier: Unique product ID
+1. **XGBoost Algorithm:** The code utilizes the XGBoost algorithm, known for its ability to handle complex relationships and capture non-linear patterns in data effectively. The algorithm's boosted ensemble nature aids in refining predictions through multiple iterations.
 
-Item_Weight: Weight of product
+2. **Feature Preprocessing:** The use of `StandardScaler` and `SimpleImputer` to preprocess features ensures that the data is properly scaled and missing values are handled appropriately. This preprocessing enhances the model's convergence and overall performance.
 
-Item_Fat_Content: Whether the product is low fat or not
+3. **Binned Target Variable:** Mohamed's code binned the "Item_Outlet_Sales" target variable by increments of 400 USD. This binning approach likely helped the model focus on predicting broader sales trends, reducing the impact of outliers and fine-grained variations.
 
-Item_Visibility: The % of total display area of all products in a store allocated to the particular product
+4. **Hyperparameter Tuning:** The model configuration includes carefully tuned hyperparameters such as `learning_rate`, `n_estimators`, `max_depth`, and more. These optimized hyperparameters enable the model to fine-tune its predictions, resulting in better fit to the data.
 
-Item_Type: The category to which the product belongs
+5. **Real-World Variability:** The code takes into account the inherent variability and noise present in real-world sales data. This consideration likely contributes to the model's ability to generalize well to unseen data, yielding a more accurate predictive performance.
 
-Item_MRP: Maximum Retail Price (list price) of the product
+6. **Dataset and Preprocessing:** Mohamed's code reads the dataset from `Train_modified_Binned_150.csv` and performs one-hot encoding on various categorical features. This meticulous preprocessing ensures that the model receives relevant and structured input data.
 
-Outlet_Identifier: Unique store ID
+7. **Model Training:** The code constructs an XGBoost regressor with carefully selected hyperparameters and trains it on scaled training data. This structured approach to model training contributes to its high predictive accuracy.
 
-Outlet_Establishment_Year: The year in which store was established
+8. **Performance Evaluation:** The code evaluates the model's performance using the R-squared metric, indicating how well the model's predictions align with the actual sales data.
 
-Outlet_Size: The size of the store in terms of ground area covered
+In conclusion, Mohamed's code demonstrates a well-structured approach to feature preprocessing, model selection, and hyperparameter tuning. The utilization of the XGBoost algorithm, binned target variable, and the understanding of real-world data dynamics have likely synergized to produce a model with exceptional predictive power for sales data.
 
-Outlet_Location_Type: The type of city in which the store is located
+---
 
-Outlet_Type: Whether the outlet is just a grocery store or some sort of supermarket
-
-Item_Outlet_Sales: Sales of the product in the particulat store. This is the outcome variable to be predicted.
-## Project Deliverables
-Our project will provide analysis of the following areas:
-- Accurate model for predicting 2014 Sales of product by product and location
-- Provide comparative data for projectied sales across locations
-- Provide aggregate for total sales predicted in 2014.
-
-
-# Data collection, cleaning, modeling, and visualization tools
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and Analysis
-
-
-    - Entity Relationship Diagram was also created using pgAdmin4 and saved as "ERD.png" to represent the visual of the relationship between our two data set 
-    <img width="500" alt="image" src="./SQL/ERD.png">
-
-
-# Part 1: Database and table setup
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 2: Data validation and exploration
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 3: Model Creation
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 4: Model Training
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 5: Model Testing
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 6: Model Optimization
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 7: Data Output Visualization and Analysis
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and Analysis
-
-# Data collection, cleaning, modeling, and visualization tools
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-
-- Python and panda to clean and convert csv files to json.
+## Insights from the data:
 
 
 
-- Plotly for interactive bar and line graphs visualizing stock price changes over time. 
-
-- Flask app using 'render_template' to serve up the dashboard and jsonify to pull in data files enabling dashboard. please check 'Memo' in our application.py for more info.
 
 
+
+
+<br>
+<br>
+<br>
 **Please visit our individual Github pages below**  
 [Alex Kopp](https://github.com/alexkopp12)  
 [Andrew Skorupa](https://github.com/AndyMSkor)  
