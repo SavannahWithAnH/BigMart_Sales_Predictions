@@ -20,7 +20,7 @@ Click [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/not
 - Savannah Porter
 - Mohamed Abou elkhier
 
-  ## Alex
+## Alex
 - **File Name:** Sales_predict_rf.ipynb
 - **Methods:** RandomForestRegressor, train_test_split, StandardScaler, tensorflow_decision_forests, mean_squared_error
 - **Performance:** The model's R-squared value of 0.586 showcases reasonable performance on the dataset, indicating its ability to capture sales patterns with a certain degree of accuracy.
