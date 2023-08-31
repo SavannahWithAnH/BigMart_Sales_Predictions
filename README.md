@@ -13,6 +13,8 @@ As this project encompasses contributions from diverse aspects such as data prep
 ## Important Links
 Please click [here](https://docs.google.com/presentation/d/1MLGNz3lZow-65TH0pca2mxmcsVfNuM0Paq-pxnvl1vI/edit#slide=id.g278fa82c89e_0_50) to view our findings presentation,  
 
+click [here](https://docs.google.com/spreadsheets/d/1Z3Rm-uLZ-wHChTdGGMKrZoQhETqUenYdb1iC-8BS4v8/edit#gid=0) to see our optimization log,
+
 and [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/notebook) to view one of our primary datasets!  
 
 # Contributors
