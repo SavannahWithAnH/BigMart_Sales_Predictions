@@ -1,155 +1,107 @@
-# BigMart Sales Data Neural Network
-
-**Topic:** Create a model which predicts sales of products at BigMart locations based on 2013 Sales data. <br>
-Click [here](https://docs.google.com/presentation/d/1MLGNz3lZow-65TH0pca2mxmcsVfNuM0Paq-pxnvl1vI/edit#slide=id.g278fa82c89e_0_50) to view our findings presentation.
+# BigMart Sales Prediction Model building with Regression Analysis
   
-## Project Proposal
+## Overview
+
+This project focuses on leveraging regression analytics to predict future sales for a diverse range of products across various store locations. The sales data, collected from BigMart in the year 2013, serves as the foundation for this predictive analysis. The primary objective is to utilize historical sales data, product attributes, and location-related factors to build a robust regression model that can accurately forecast sales in the future.
+
+**Benefits of Sales Prediction:**
+Predicting future sales has significant benefits for both businesses and consumers. For BigMart, accurate sales predictions enable strategic inventory management, optimizing stock levels to prevent overstocking or stockouts. This, in turn, enhances operational efficiency and reduces carrying costs. Additionally, sales predictions allow the identification of high-demand products and locations, aiding in targeted marketing campaigns and improved resource allocation. For consumers, accurate sales predictions can lead to more consistent product availability and potentially lower prices due to optimized inventory management.
+
+As this project encompasses contributions from diverse aspects such as data preprocessing, feature engineering, regression modeling, and location-based analysis, it showcases the collaborative efforts of contributors with varied expertise, ultimately culminating in a predictive model that can drive informed decision-making for BigMart.
+
+
+## Important Links
+Please click [here](https://docs.google.com/presentation/d/1MLGNz3lZow-65TH0pca2mxmcsVfNuM0Paq-pxnvl1vI/edit#slide=id.g278fa82c89e_0_50) to view our findings presentation, click [here](https://docs.google.com/spreadsheets/d/1Z3Rm-uLZ-wHChTdGGMKrZoQhETqUenYdb1iC-8BS4v8/edit#gid=0) to see our optimization log, and [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/notebook) to view one of our primary datasets!  
+
+# Contributors
+- Alex Kopp
+- Andrew Skorupa
+- Savannah Porter
+- Mohamed Abou elkhier
+
+
+# Model Building and Optimization
+
+## Alex
+- **File Name:** Sales_predict_rf.ipynb
+- **Methods:** RandomForestRegressor, train_test_split, StandardScaler, tensorflow_decision_forests, mean_squared_error
+- **Performance:** The model's R-squared value of 0.586 showcases reasonable performance on the dataset, indicating its ability to capture sales patterns with a certain degree of accuracy.
+
+## Savannah
+- **File Name:** RF3.ipynb
+- **Methods:** RandomForestRegressor, train_test_split, StandardScaler, RandomizedSearchCV
+- **Performance:** RF3 achieves an R-squared value of 0.6080, indicating improved predictive accuracy compared to RandomForest's default settings.
+
+## Mohamed
+- **File Name:** GBR.IPYNB
+- **Methods:** GradientBoostingRegressor, MinMax, KFold, hyperparameter tuning with nested loops
+- **Performance:** The model achieves an R-squared value of around 0.705, indicating decent-to-good fit. Such performance is typically acceptable for real-world scenarios, showcasing the model's ability to capture meaningful data patterns.
+
+## Andrew
+- **File Name:** Exploratory_Analysis.ipynb
+- **Methods:** train_test_split, StandardScaler, mean_squared_error, ensemble.GradientBoostingRegressor
+- **Performance:** Evaluated by Mean Squared Error (MSE), the model's calculated MSE of approximately 0.0013 signifies accurate predictions aligned with actual sales. The accompanying deviance plot highlights its effective error minimization through boosting iterations.
+
+ ## Mohamed
+- **File Name:** XGBR_final_results.ipynb
+- **Methods:** train_test_split, XGBRegressor, StandardScaler, SimpleImputer, sklearn.metrics
+- **Performance:** The model achieved an R-squared value of approximately 0.82, indicating good performance for sale predictions. This level of performance is attributed to the model's ability to capture underlying sales patterns while considering real-world variability and noise.
+
+## Alex
+- **File Name:** Sales_predict_product.ipynb
+- **Methods:** train_test_split, StandardScaler, LabelEncoder, XGBRegressor, sklearn.metrics
+- **Performance:** The model achieved an R-squared value of about 0.543, suggesting moderate predictive accuracy. While the model captures a significant portion of sales data patterns, there's potential for improvement to enhance its predictive power.
+
+
+# Highest Performing Model
+
+Among the contributions, the code provided by **Mohamed** in the file `XGBR_final_results.ipynb` stands out as the highest performing model. This model achieved an impressive R-squared value of approximately 0.82, indicating a robust predictive capability for sales. Several factors likely contributed to its exceptional performance:
+
+1. **XGBoost Algorithm:** The code utilizes the XGBoost algorithm, known for its ability to handle complex relationships and capture non-linear patterns in data effectively. The algorithm's boosted ensemble nature aids in refining predictions through multiple iterations.
+
+2. **Feature Preprocessing:** The use of `StandardScaler` and `SimpleImputer` to preprocess features ensures that the data is properly scaled and missing values are handled appropriately. This preprocessing enhances the model's convergence and overall performance.
+
+3. **Binned Target Variable:** Mohamed's code binned the "Item_Outlet_Sales" target variable by increments of 400 USD. This binning approach likely helped the model focus on predicting broader sales trends, reducing the impact of outliers and fine-grained variations.
+
+4. **Hyperparameter Tuning:** The model configuration includes carefully tuned hyperparameters such as `learning_rate`, `n_estimators`, `max_depth`, and more. These optimized hyperparameters enable the model to fine-tune its predictions, resulting in better fit to the data.
+
+5. **Real-World Variability:** The code takes into account the inherent variability and noise present in real-world sales data. This consideration likely contributes to the model's ability to generalize well to unseen data, yielding a more accurate predictive performance.
+
+6. **Dataset and Preprocessing:** Mohamed's code reads the dataset from `Train_modified_Binned_150.csv` and performs one-hot encoding on various categorical features. This meticulous preprocessing ensures that the model receives relevant and structured input data.
+
+7. **Model Training:** The code constructs an XGBoost regressor with carefully selected hyperparameters and trains it on scaled training data. This structured approach to model training contributes to its high predictive accuracy.
+
+8. **Performance Evaluation:** The code evaluates the model's performance using the R-squared metric, indicating how well the model's predictions align with the actual sales data.
+
+In conclusion, Mohamed's code demonstrates a well-structured approach to feature preprocessing, model selection, and hyperparameter tuning. The utilization of the XGBoost algorithm, binned target variable, and the understanding of real-world data dynamics have likely synergized to produce a model with exceptional predictive power for sales data.
 
 
 
-# Contributors & Responsibilities
-- Alex Kopp - TBD
-- Andrew Skorupa - TBD 
-- Savannah Porter - Random Forest, Randomized Search, & Regularization
-- Mohamed Abou elkhier -  TBD
- 
-## Datasets
-Click [here](https://www.kaggle.com/code/hiralmshah/bigmart-sales-prediction/notebook) to view one of our primary datasets!
 
-Item_Identifier: Unique product ID
+# Insights from the Data
 
-Item_Weight: Weight of product
+Upon analyzing the sales data, several insightful observations have been made:
 
-Item_Fat_Content: Whether the product is low fat or not
+- **Highest and Lowest Performing Locations:** Through the predictive models, we've identified the locations that exhibit the highest and lowest sales performance. This information can be crucial for strategic decision-making, such as resource allocation and marketing efforts.
 
-Item_Visibility: The % of total display area of all products in a store allocated to the particular product
+- **Top and Bottom Performing Products:** The models have allowed us to identify the top-performing products that drive significant sales, as well as those that exhibit lower sales performance. This insight can guide inventory management, marketing strategies, and potential product improvements.
 
-Item_Type: The category to which the product belongs
+- **Outliers in Store Data:** It's worth noting that some stores may act as outliers within the dataset. These outliers could be due to various factors such as store-specific promotions, unique geographical contexts, or other external influences. Detecting and understanding these outliers is valuable for refining models and insights.
 
-Item_MRP: Maximum Retail Price (list price) of the product
+These insights provide a deeper understanding of the sales data's dynamics, enabling better decision-making and strategic planning for BigMart's future endeavors.
 
-Outlet_Identifier: Unique store ID
-
-Outlet_Establishment_Year: The year in which store was established
-
-Outlet_Size: The size of the store in terms of ground area covered
-
-Outlet_Location_Type: The type of city in which the store is located
-
-Outlet_Type: Whether the outlet is just a grocery store or some sort of supermarket
-
-Item_Outlet_Sales: Sales of the product in the particulat store. This is the outcome variable to be predicted.
-## Project Deliverables
-Our project will provide analysis of the following areas:
-- Accurate model for predicting 2014 Sales of product by product and location
-- Provide comparative data for projectied sales across locations
-- Provide aggregate for total sales predicted in 2014.
-
-
-# Data collection, cleaning, modeling, and visualization tools
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and Analysis
-
-
-    - Entity Relationship Diagram was also created using pgAdmin4 and saved as "ERD.png" to represent the visual of the relationship between our two data set 
-    <img width="500" alt="image" src="./SQL/ERD.png">
-
-
-# Part 1: Database and table setup
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 2: Data validation and exploration
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 3: Model Creation
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 4: Model Training
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 5: Model Testing
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 6: Model Optimization
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-# Part 7: Data Output Visualization and Analysis
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and Analysis
-
-# Data collection, cleaning, modeling, and visualization tools
-- SQL for database and table setup, data validation, exploration, and analysis. we divided to 3 parts
-    - PART 1: Datebase and table setup
-    - PART 2: Data validation and exploration
-    - PART 3: Model Creation
-    - PART 4: Model Training
-    - PART 5: Model Testing
-    - PART 6: Model Optimization
-    - PART 7: Data Output Visualization and analysis
-
-
-- Python and panda to clean and convert csv files to json.
+---
 
 
 
-- Plotly for interactive bar and line graphs visualizing stock price changes over time. 
 
-- Flask app using 'render_template' to serve up the dashboard and jsonify to pull in data files enabling dashboard. please check 'Memo' in our application.py for more info.
 
+
+
+
+<br>
+<br>
+<br>
 
 **Please visit our individual Github pages below**  
 [Alex Kopp](https://github.com/alexkopp12)  
